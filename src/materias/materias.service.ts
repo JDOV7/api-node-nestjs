@@ -15,6 +15,10 @@ export class MateriasService {
     try {
       const objRespuestaCrearMateria = await this.materiaModelo.create({
         ...objData,
+        HorariosSemana: {
+          lunes:60
+        },
+        traka:5
       });
       return {
         result: true,
