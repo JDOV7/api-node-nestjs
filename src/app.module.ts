@@ -7,6 +7,7 @@ import { HelloController } from './hello/hello.controller';
 import { StudentsModule } from './students/students.module';
 import { MongooseModule } from '@nestjs/mongoose';
 import { MateriasModule } from './materias/materias.module';
+import { S3Module } from './s3/s3.module';
 @Module({
   imports: [
     MongooseModule.forRoot(
@@ -18,6 +19,7 @@ import { MateriasModule } from './materias/materias.module';
     UsersModule,
     StudentsModule,
     MateriasModule,
+    S3Module,
   ],
   controllers: [HelloController],
 })
